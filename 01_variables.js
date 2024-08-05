@@ -15,8 +15,9 @@ if(){
 var accountPassword = "1234567"
 branch = "davangere"
 
-//TypeError: Assignment to constant variable.
 // accountId = 1234
+// TypeError: Assignment to constant variable.
+
 
 accoutholdername = "Girish - changed value"
 accountPassword = "asdfjklj; - change value"
