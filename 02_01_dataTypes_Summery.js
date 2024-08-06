@@ -6,8 +6,8 @@
 //JavaScript is Dynamically Types ?
 
 /*
-JavaScript is a dynamically typed language. This means that variable types are determined at runtime, a
-nd you do not need to explicitly declare the type of a variable before using it. You can assign different types of values to a variable during its lifetime.
+JavaScript is a dynamically typed language. This means that variable types are determined at runtime,
+and you do not need to explicitly declare the type of a variable before using it. You can assign different types of values to a variable during its lifetime.
 For example, in JavaScript, you can do the following:
 let x = 10; // x is now a number
 x = "Hello"; // x is now a string
@@ -25,11 +25,11 @@ Static typing, on the other hand, provides better type safety at the cost of som
 Meaning:  It is used to create unique identifiers for object properties.
 Symbols are unique and immutable, meaning that each symbol value is distinct and cannot be changed after it's created.
 
-Unique Identifier Storage:
+    1. Unique Identifier Storage:
 
     Each Symbol value is stored uniquely in memory. When you create a Symbol, the JavaScript engine allocates memory to store this unique identifier.
 
-Immutable Nature:
+    2. Immutable Nature:
 
     Symbols are immutable and cannot be changed once created. This immutability ensures that the unique identifier remains constant throughout the program execution.
 
@@ -39,6 +39,7 @@ const id1 = Symbol("1234");
 const id2 = Symbol("1234");//even both id and id2 having same value. the memory allowcation of both is different
 console.log(id1 == id2);//false
 
+console.log(typeof id1);
 //BigInt
 a = 1;
 console.log(typeof(a));
