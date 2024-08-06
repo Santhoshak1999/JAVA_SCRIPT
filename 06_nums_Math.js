@@ -13,15 +13,15 @@ console.log(typeof(strnum));//string
 //int.toFixed(digit); 
 //Rounds and formats a number to fixed decimal places.
 //digit shows how many decimal number it has to rounded after the decimal
+console.log("toFixed()");
 nums3 = 234.55645556343;
 console.log(nums3.toFixed(5));
 console.log(nums3.toFixed(2));//return a string representing a number
 console.log(typeof nums3.toFixed(5))
 
-
+console.log("toPrecision()");
 //int.toPricision()
 //it returns a string representing a number
 const nums4 = 123.533434;
-console.log(nums4);
 console.log(nums4.toPrecision(4)); //it will start presizing the value from numbers(it include decimal also);
 console.log(nums4.toPrecision(3)); 
