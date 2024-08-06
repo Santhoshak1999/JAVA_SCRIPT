@@ -33,7 +33,7 @@ console.log(url.replace("dsa-java", "Java_Script"));//replace/change the existin
 
 console.log(url.split("/", 2)); //split the string with the given charater and 2 is the limit to the split, return string
 
-// Template Literals and ${} in JavaScript
+// Template Literals and ${} in JavaScript ***
 
 // Template Literals: Template literals are a way to create strings in JavaScript using backticks (`) instead of quotes (' or ").
 // They are useful because they make it easier to work with strings and add variables or expressions directly into the string.
@@ -43,7 +43,16 @@ name = 'Santhosha K'
 age = 24
 address = 'Davangere'
 
-introduction = `My name is ${name} age is ${age} from ${address}.`; //called as String interpolation - use backtic and ${}
-console.log(introduction
+introduction = "My name is ${name} age is ${age} from ${address}."; //called as String interpolation - use backtic and ${}
+console.log(introduction);
+//The above code is print as it is in the line but i want the values of the name, age n address 
+// so we use here backtick
 
-);
+introduction = `My name is ${name} age is ${age} from ${address}.`
+console.log(introduction);
+
+//back tick supports multiline strings
+str = `this is first line
+this is second line
+this in third lline`
+console.log(str);
