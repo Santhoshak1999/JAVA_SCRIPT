@@ -22,6 +22,21 @@ console.log(typeof nums3.toFixed(5))
 console.log("toPrecision()");
 //int.toPricision()
 //it returns a string representing a number
-const nums4 = 123.533434;
+const nums4 = 123.533434;   
 console.log(nums4.toPrecision(4)); //it will start presizing the value from numbers(it include decimal also);
 console.log(nums4.toPrecision(3)); 
+
+
+/*-------------------------------Maths-------------------------- */
+// Math is can object in js
+console.log(Math);
+console.log(Math.abs(-100));
+console.log(Math.round(23.54));
+console.log(Math.ceil(12.09));
+console.log(Math.floor(12.54));
+console.log(Math.round(Math.random() * 9));//give random number between 0.0 to 0.9
+console.log((Math.round((Math.random()*10) + 1)))
+console.log(Math.fround(21.23));
+console.log(Math.pow(3,2));
+console.log(Math.max(2,4, 2, 32, 12));
+console.log(Math.min(2,4, 1, 0, 3));
