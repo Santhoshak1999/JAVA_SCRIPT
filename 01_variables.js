@@ -1,6 +1,6 @@
 /*
 let, var and const -> variable declarations or variable declaration keywords
-
+ 
 use to  define the scope of variable 
 and prevent accidental creation of global variables.*/
 const accountId = 12345432178
