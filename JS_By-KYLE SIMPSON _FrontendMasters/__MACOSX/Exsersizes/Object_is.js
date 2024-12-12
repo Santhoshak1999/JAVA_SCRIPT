@@ -15,6 +15,7 @@ if(Object.is){
 
 
         return false;
+        
         function isItNegzero(v){
             return v == 0 && (1/v) == -Infinity;
         }
