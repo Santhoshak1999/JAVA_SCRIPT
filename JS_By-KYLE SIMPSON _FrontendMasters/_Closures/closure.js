@@ -1,6 +1,6 @@
 //Lexical Scope - > 
 // means a function can use variables defined 
-// outside of it, in the place where it was written.
+// outside of it(parent), in the place where it was written.
 
 
 function x(){
