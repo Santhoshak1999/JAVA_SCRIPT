@@ -1,44 +1,50 @@
-function findAll(match,arr) {
-  var ret = [];
-  for (let v of arr) {
-    if (Object.is(match,v)) {
-      ret.push(v);
+function setsMatch(arr1, arr2){
+    if(Array.isArray(arr1) && Array.isArray(arr2)){
+        for(let v of arr2){
+            if(!arr1.includes(v)){
+                return false;
+            }
+        }
+        return true;
     }
-    else if (match == null && v == null) {
-      ret.push(v);
-    }
-    else if (typeof match == "boolean") {
-      if (match === v) {
-        ret.push(v);
-      }
-    }
-    else if (typeof match == "string" && match.trim() != "" && typeof v == "number" && !Object.is(-0,v)) {
-      if (match == v) {
-        ret.push(v);
-      }
-    }
-    else if (typeof match == "number" && !Object.is(match,-0) && !Object.is(match,NaN) && !Object.is(match,Infinity) && !Object.is(match,-Infinity) && typeof v == "string" && v.trim() != "") {
-      if (match == v) {
-        ret.push(v);
-      }
-    }
-    
-
-
-
-
-  }
-	return ret;
+    return false;
 }
 
 
-// tests:
-var myObj = { a: 2 };
 
+function findAll(match, arr){
+    var ret = []
+
+    for(let v of arr){
+        if(Object.is(match, v)){
+            ret.push(v);
+        }
+        else if(match == null && v==null){
+            ret.push(v);
+        }
+        else if(typeof match == "boolean" && typeof v == "boolean"){
+            if(match == v){
+                ret.push(match);//v
+            }
+        }
+        else if(typeof match == "string" && match.trim()!="" && typeof v == "number")
+    }
+    return ret;
+}
+
+// var myObj = { a: 2 };
+
+// var values = [
+// 	null, undefined, -0, 0, 13, 42, NaN, -Infinity, Infinity,
+// 	"", "0", "42", "42hello", "true", "NaN", true, false, myObj
+// ];
+
+var myObj = {a : 2};
 var values = [
-	null, undefined, -0, 0, 13, 42, NaN, -Infinity, Infinity,
-	"", "0", "42", "42hello", "true", "NaN", true, false, myObj
-];
+    null, undefined, -0, 0, 13, 42, NaN, -Infinity, Infinity,
+    "", "0", "42", "42hello", "true", "NaN", true, false, myObj
+]
+
 
 console.log(setsMatch(findAll(null,values),[null,undefined]) === true);
 console.log(setsMatch(findAll(undefined,values),[null,undefined]) === true);
@@ -69,15 +75,3 @@ console.log(setsMatch(findAll("false",values),[false]) === false);
 console.log(setsMatch(findAll(true,values),[true,"true"]) === false);
 console.log(setsMatch(findAll(true,values),[true,1]) === false);
 console.log(setsMatch(findAll(false,values),[false,0]) === false);
-
-// ***************************
-
-function setsMatch(arr1,arr2) {
-	if (Array.isArray(arr1) && Array.isArray(arr2) && arr1.length == arr2.length) {
-		for (let v of arr1) {
-			if (!arr2.includes(v)) return false;
-		}
-		return true;
-	}
-	return false;
-}

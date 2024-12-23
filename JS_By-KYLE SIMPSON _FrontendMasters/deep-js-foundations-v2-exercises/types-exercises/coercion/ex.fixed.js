@@ -74,3 +74,4 @@ console.log(hoursAttended(6.1,10) === false);
 console.log(hoursAttended(6,"10.1") === false);
 console.log(hoursAttended("6.1",10) === false);
 console.log(hoursAttended("6.1","10.1") === false);
+

@@ -61,7 +61,7 @@ myCatAge === myCatAge;         //false OOPS!
 // NaN === Nan
 
 isNaN(myAge);                   //false
-isNaN(myCatAge);                  //true
+isNaN(myCatAge);                //true
 isNaN("my son's age");          //true
 
 //But Undifined is equals to itself

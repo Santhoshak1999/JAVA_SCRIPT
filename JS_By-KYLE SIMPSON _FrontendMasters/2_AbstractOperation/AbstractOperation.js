@@ -109,4 +109,4 @@ if(Number(workshopEnrollement1) < Number(workshopEnrollement2)){
 
 if(workshopEnrollement1 < workshopEnrollement2){
     console.log(true);
-}
+} 
