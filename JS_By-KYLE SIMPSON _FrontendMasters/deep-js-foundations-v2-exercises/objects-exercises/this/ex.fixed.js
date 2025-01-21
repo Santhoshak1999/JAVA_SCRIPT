@@ -31,9 +31,9 @@ var deepJS = {
 	printRecords(recordIds) {
 		var records = recordIds.map(this.getStudentFromId.bind(this));
 
-		records.sort(this.sortByNameAsc);
+		records.sort(this.sortByNameAsc.bind(this));
 
-		records.forEach(this.printRecord);
+		records.forEach(this.printRecord.bind(this));
 	},
 	sortByNameAsc(record1,record2){
 		if (record1.name < record2.name) return -1;
