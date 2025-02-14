@@ -91,3 +91,5 @@ ask("?????");
 
 // undefined -> variable exists but not assigned any value.
 // Undeclared -> Nevel created any variable in any scope.
+
+ 

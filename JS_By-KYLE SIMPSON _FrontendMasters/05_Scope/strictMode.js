@@ -17,10 +17,15 @@
 
 // x = 10; //ReferenceError: x is not defined
 
+
+
 // 2. Eliminates Silent Errors
 // ---------------------------
 // NaN = 5; //Some errors in JavaScript fail silently in non-strict mode.
 // console.log(NaN);
+
+
+
 
 // 3. Improves Security:
 // ---------------------
@@ -28,7 +33,9 @@
 // global scope (in non-strict mode, 
 // this refers to the global object, 
 // which can lead to security issues).
-function test(){
-    console.log(this);// 'this' is undefined in strict mode
-}
-test();
+
+
+// function test(){
+//     console.log(this);// 'this' is undefined in strict mode
+// }
+// test();

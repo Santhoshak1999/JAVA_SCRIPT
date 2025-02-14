@@ -1,3 +1,10 @@
+// typeof Operator
+// ---------------
+// The typeof operator in JavaScript always 
+// returns a string representing the type of
+// the operand.
+
+
 var v;      
 typeof v;   //undefined - currently doesnt have a value later it will be store
 v = "1"; 
@@ -37,16 +44,18 @@ var a;
 //Undeclared -> The variable has
 // been not declared before trying
 // to use or access it
+// exm : you are going to make a + b, but
+// you are not declares in the programm.
 
 // console.log(b); 
-// b is using but no declared
+// b is using but not declared
 
 /*--------------------------------------------------------------*/
 
 
 //Special Values(Nan and isNan)
 //-----------------------------
-// 1. Nan(Not a number)
+// 1. NaN(Not a number) - Unrepresentable number/Invalid Number
 // a math calculation doesn’t make sense or not possible
 var myAge = Number(0o46);       //38
 var MyNextAge = Number(39);     //39

@@ -11,7 +11,7 @@ console.log(msg1 + numStudents + msg2);
 
 console.log(`There are ${numStudents + ""} numStudents` )
 
-numStudentsVal = "16";
+let numStudentsVal = "16";
 
 function addAstudent(numsStudents){
     return numsStudents + 1;
@@ -20,7 +20,11 @@ function addAstudent(numsStudents){
 function subAstudent(numsStudents){
     return numsStudents - 1;
 }
-console.log(addAstudent(numStudentsVal)); //161
+console.log("--------------------------------");
+console.log(addAstudent(+numStudentsVal)); //161
+// Quesion: why "+" converts to number this is an operator not type converter right ?
+// Great question! The unary + operator in JavaScript is a special case—it is both an
+// operator and a type converter when applied to a non-number.
 console.log(addAstudent(Number(numStudentsVal)));17
 console.log(subAstudent(numStudents)); //if the value negative then it will substract
 
